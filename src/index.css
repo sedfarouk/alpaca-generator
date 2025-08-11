@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(235, 245, 247);
+}
+
+div {
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.main {
+  display: flex;
+}
