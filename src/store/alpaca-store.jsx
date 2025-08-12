@@ -5,6 +5,7 @@ export const alpacaContext = createContext({
   hair: "",
   ears: "",
   mouth: "",
+  nose: "",
   eyes: "",
   neck: "",
   leg: "",
@@ -29,7 +30,7 @@ export default function AlpacaContextProvider(props) {
   const [neck, setNeck] = useState("default");
   const [leg, setLeg] = useState("default");
   const [accessories, setAccessories] = useState("default");
-  const [background, setBackground] = useState("default");
+  const [background, setBackground] = useState("blue50");
   const [currentPart, setCurrentPart] = useState("Hair");
 
   function changeHair(hairstyle) {
@@ -76,6 +77,7 @@ export default function AlpacaContextProvider(props) {
     eyes,
     neck,
     leg,
+    nose: "nose",
     accessories,
     background,
     changeEars,

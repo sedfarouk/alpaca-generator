@@ -1,6 +1,6 @@
 import './App.css'
 import Alpaca from './components/Alpaca'
-import AlpacaContextProvider from './components/store/alpaca-store'
+import AlpacaContextProvider from './store/alpaca-store';
 
 function App() {
   return (

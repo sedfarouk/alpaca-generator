@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { alpacaContext } from "../../store/alpaca-store";
+import { alpacaContext } from "../store/alpaca-store";
 
-export default function Part({partItem, ...props}) {
+export default function Part({partItem, partImagesMap, ...props}) {
   const alpacaCtx = useContext(alpacaContext);
-  const selectedAccessory = alpacaCtx.accessories + '.png';
-
+  const selectPartStyle = alpacaCtx[partItem] + '.png';
+  console.log(partImagesMap[selectPartStyle]);
   return (
-    <div style={{ backgroundImage: `url(${accessoriesImagesMap[selectedAccessory]})` }}>
+    <div style={{ backgroundImage: `url(${partImagesMap[selectPartStyle]})` }}>
       {props.children}
     </div>
   );

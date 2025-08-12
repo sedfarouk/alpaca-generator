@@ -4,7 +4,7 @@ import { useContext } from "react";
 import AVAILABLE_PARTS from "../utils/preconfigurations";
 import { functionMapppings } from "../utils/preconfigurations";
 
-import { alpacaContext } from "./store/alpaca-store";
+import { alpacaContext } from "../store/alpaca-store";
 
 export default function Settings() {
   const alpacaCtx = useContext(alpacaContext);

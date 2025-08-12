@@ -6,13 +6,11 @@ body {
   display: flex;
 }
 
-.alpaca {
+.alpaca, .alpaca div{
   flex: 1;
-}
-
-.alpaca div{
-  background-repeat: no-repeat;
-  height: auto;
+  background-size: contain;
+  height: 500px;
+  width: 500px;
 }
 
 .settings {

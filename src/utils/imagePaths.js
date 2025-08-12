@@ -1,5 +1,5 @@
 const accessoriesImages = import.meta.glob(
-  "../public/images/accessories/*.png",
+  "../assets/images/accessories/*.png",
   { eager: true }
 );
 
@@ -10,7 +10,7 @@ export const accessoriesImagesMap = Object.fromEntries(
   ])
 );
 
-const earsImages = import.meta.glob("../public/images/ears/*.png", {
+const earsImages = import.meta.glob("../assets/images/ears/*.png", {
   eager: true,
 });
 
@@ -21,7 +21,7 @@ export const earsImagesMap = Object.fromEntries(
   ])
 );
 
-const eyesImages = import.meta.glob("../public/images/eyes/*.png", {
+const eyesImages = import.meta.glob("../assets/images/eyes/*.png", {
   eager: true,
 });
 
@@ -32,7 +32,7 @@ export const eyesImagesMap = Object.fromEntries(
   ])
 );
 
-const hairImages = import.meta.glob("../public/images/hair/*.png", {
+const hairImages = import.meta.glob("../assets/images/hair/*.png", {
   eager: true,
 });
 
@@ -43,7 +43,7 @@ export const hairImagesMap = Object.fromEntries(
   ])
 );
 
-const legImages = import.meta.glob("../public/images/leg/*.png", {
+const legImages = import.meta.glob("../assets/images/leg/*.png", {
   eager: true,
 });
 
@@ -54,7 +54,7 @@ export const legImagesMap = Object.fromEntries(
   ])
 );
 
-const mouthImages = import.meta.glob("../public/images/mouth/*.png", {
+const mouthImages = import.meta.glob("../assets/images/mouth/*.png", {
   eager: true,
 });
 
@@ -65,7 +65,7 @@ export const mouthImagesMap = Object.fromEntries(
   ])
 );
 
-const neckImages = import.meta.glob("../public/images/neck/*.png", {
+const neckImages = import.meta.glob("../assets/images/neck/*.png", {
   eager: true,
 });
 
@@ -76,7 +76,7 @@ export const neckImagesMap = Object.fromEntries(
   ])
 );
 
-const noseImages = import.meta.glob("../public/images/nose/*.png", {
+const noseImages = import.meta.glob("../assets/images/nose/*.png", {
   eager: true,
 });
 
@@ -88,7 +88,7 @@ export const noseImagesMap = Object.fromEntries(
 );
 
 const backgroundImages = import.meta.glob(
-  "../public/images/background_images/*.png",
+  "../assets/images/background_images/*.png",
   { eager: true }
 );
 
