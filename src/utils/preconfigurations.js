@@ -1,11 +1,11 @@
 const AVAILABLE_PARTS = [
-  { Hair: ["default", "curls", "elegant", "fancy", "bang", "quiff", "short"] },
-  { Ears: ["default", "tilt-backward", "tilt-forward"] },
-  { Eyes: ["default", "angry", "naughty", "panda", "smart", "star"] },
-  { Mouth: ["default", "eating", "laugh", "tongue", "astonished"] },
-  { Neck: ["default", "bend-backward", "bend-forward"] },
+  { part: "Hair", styles: ["default", "curls", "elegant", "fancy", "bang", "quiff", "short"] },
+  { part: "Ears", styles: ["default", "tilt-backward", "tilt-forward"] },
+  { part: "Eyes", styles: ["default", "angry", "naughty", "panda", "smart", "star"] },
+  { part: "Mouth", styles: ["default", "eating", "laugh", "tongue", "astonished"] },
+  { part: "Neck", styles: ["default", "bend-backward", "bend-forward"] },
   {
-    Leg: [
+    part: "Leg", styles: [
       "default",
       "bubble-tea",
       "cookie",
@@ -14,9 +14,9 @@ const AVAILABLE_PARTS = [
       "tilt-forward",
     ],
   },
-  { Accessories: ["default", "earings", "flower", "glasses", "headphone"] },
+  { part: "Accessories", styles: ["default", "earings", "flower", "glasses", "headphone"] },
   {
-    Background: [
+    part: "Background", styles: [
       "blue50",
       "blue60",
       "blue70",
