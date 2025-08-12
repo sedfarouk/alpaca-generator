@@ -2,11 +2,19 @@ body {
   background-color: rgb(235, 245, 247);
 }
 
-div {
+.main {
+  display: flex;
+}
+
+.alpaca {
+  flex: 1;
+}
+
+.alpaca div{
   background-repeat: no-repeat;
   height: auto;
 }
 
-.main {
-  display: flex;
+.settings {
+  flex: 2;
 }

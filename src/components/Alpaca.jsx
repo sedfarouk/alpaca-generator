@@ -1,12 +1,19 @@
-import Accessories from "./parts/accessories/Accessories";
-import blueBgImg from './background_images/blue50.png';
+import Ears from "../components/parts/ears/Ears";
+import Settings from "./Settings";
+import blueBgImg from "./background_images/blue50.png";
 
 export default function Alpaca() {
   return (
     <>
       <h1> Alpaca Generator </h1>
-      <div className="main" style={{backgroundImage: `url(${blueBgImg})`}}>
-        <Accessories />
+      <div className="main">
+        <div
+          className="alpaca"
+          style={{ backgroundImage: `url(${blueBgImg})` }}
+        >
+          <Ears />
+        </div>
+        <Settings />
       </div>
     </>
   );
