@@ -39,4 +39,15 @@ const AVAILABLE_PARTS = [
   },
 ];
 
+export const functionMapppings = {
+  hair: "changeHair",
+  ears: "changeEars",
+  eyes: "changeEyes",
+  mouth: "changeMouth",
+  neck: "changeNeck",
+  leg: "changeLeg",
+  accessories: "changeAccessories",
+  background: "changeBackground",
+}
+
 export default AVAILABLE_PARTS;

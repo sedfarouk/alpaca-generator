@@ -18,7 +18,6 @@ const Button = styled.button`
 `;
 
 const OutlinedButton = ({ selected, children, ...props }) => {
-  console.log(selected);
   return (
     <Button selected={selected} {...props}>
       {children}

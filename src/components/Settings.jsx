@@ -2,12 +2,15 @@ import OutlinedButton from "../UI/OutlinedButton";
 import classes from "./Settings.module.css";
 import { useContext } from "react";
 import AVAILABLE_PARTS from "../utils/preconfigurations";
+import { functionMapppings } from "../utils/preconfigurations";
 
 import { alpacaContext } from "./store/alpaca-store";
 
 export default function Settings() {
   const alpacaCtx = useContext(alpacaContext);
-  const styles = AVAILABLE_PARTS.find(partItem => partItem.part === alpacaCtx.currentPart).styles;
+  const styles = AVAILABLE_PARTS.find(
+    (partItem) => partItem.part === alpacaCtx.currentPart
+  ).styles;
 
   return (
     <div className="settings">
@@ -25,7 +28,22 @@ export default function Settings() {
       </div>
       <div className="style">
         <h3> Style </h3>
-        {styles.map(style => <OutlinedButton onClick={() => alpacaCtx.chan} part={alpacaCtx.currentPart} selected={alpacaCtx[alpacaCtx.currentPart.toLowerCase()] === style}>{style}</OutlinedButton>)} 
+        {styles.map((style) => {
+          const currentPartLowerCase = alpacaCtx.currentPart.toLowerCase();
+
+          return (
+            <OutlinedButton
+              key={style}
+              onClick={() => {
+                alpacaCtx[functionMapppings[currentPartLowerCase]](style);
+              }}
+              part={alpacaCtx.currentPart}
+              selected={alpacaCtx[currentPartLowerCase] === style}
+            >
+              {style}
+            </OutlinedButton>
+          );
+        })}
       </div>
     </div>
   );
