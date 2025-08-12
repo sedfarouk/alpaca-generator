@@ -21,15 +21,15 @@ export default function Alpaca() {
         <div className="alpaca">
           <Part partItem="background" partImagesMap={backgroundImagesMap}>
             <Part partItem="leg" partImagesMap={legImagesMap}>
-              <Part partItem="neck" partImagesMap={neckImagesMap}>
-                <Part partItem="ears" partImagesMap={earsImagesMap}>
-                  <Part
-                    partItem="accessories"
-                    partImagesMap={accessoriesImagesMap}
-                  >
-                    <Part partItem="nose" partImagesMap={noseImagesMap}>
-                      <Part partItem="mouth" partImagesMap={mouthImagesMap}>
-                        <Part partItem="hair" partImagesMap={hairImagesMap}>
+              <Part partItem="ears" partImagesMap={earsImagesMap}>
+                <Part partItem="neck" partImagesMap={neckImagesMap}>
+                  <Part partItem="nose" partImagesMap={noseImagesMap}>
+                    <Part partItem="mouth" partImagesMap={mouthImagesMap}>
+                      <Part partItem="hair" partImagesMap={hairImagesMap}>
+                        <Part
+                          partItem="accessories"
+                          partImagesMap={accessoriesImagesMap}
+                        >
                           <Part
                             partItem="eyes"
                             partImagesMap={eyesImagesMap}

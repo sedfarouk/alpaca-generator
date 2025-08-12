@@ -4,15 +4,24 @@ body {
 
 .main {
   display: flex;
+  justify-content: space-evenly;
+  height: 800px;
 }
 
 .alpaca, .alpaca div{
   flex: 1;
   background-size: contain;
-  height: 500px;
-  width: 500px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.alpaca {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .settings {
   flex: 2;
+  margin-left: 50px;
 }

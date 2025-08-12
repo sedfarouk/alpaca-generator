@@ -10,6 +10,7 @@ const Button = styled.button`
   height: 32px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-transform: capitalize;
 
   &:hover {
     border-color: ${(props) => (props.selected ? "#055096" : "#07335c")};
