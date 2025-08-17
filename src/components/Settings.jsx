@@ -26,6 +26,7 @@ export default function Settings() {
           </OutlinedButton>
         ))}
       </div>
+      <hr />
       <div className="style">
         <h3> Style </h3>
         {styles.map((style) => {

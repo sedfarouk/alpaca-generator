@@ -83,12 +83,12 @@ export default function Alpaca() {
   }
 
   return (
-    <div className="w-4/5 mx-auto">
+    <div className="mx-auto w-3/5">
       <h1 className="text-[30px] md:text-[40px] text-center m-[50px]">
         Alpaca Generator
       </h1>
-      <div className="main mt-[80px] flex flex-col md:flex-row items-center gap-20">
-        <div className="alpaca basis-2/5">
+      <div className="main mt-[80px] flex flex-col md:flex-row gap-20">
+        <div className="alpaca basis-1/2">
           <div className="relative h-[400px] md:h-[600px] w-auto" ref={alpacaDivRef}>
             <Part partItem="background" partImagesMap={backgroundImagesMap}>
               <Part partItem="leg" partImagesMap={legImagesMap}>
@@ -96,10 +96,10 @@ export default function Alpaca() {
                   <Part partItem="neck" partImagesMap={neckImagesMap}>
                     <Part partItem="nose" partImagesMap={noseImagesMap}>
                       <Part partItem="mouth" partImagesMap={mouthImagesMap}>
-                        <Part partItem="accessories" partImagesMap={accessoriesImagesMap}>
+                        <Part partItem="hair" partImagesMap={hairImagesMap}>
                           <Part
-                            partItem="hair"
-                            partImagesMap={hairImagesMap}
+                            partItem="accessories"
+                            partImagesMap={accessoriesImagesMap}
                           >
                             <Part
                               partItem="eyes"
@@ -114,7 +114,7 @@ export default function Alpaca() {
               </Part>
             </Part>
           </div>
-          <div className="flex flex-row justify-center gap-10 mt-10">
+          <div className="flex flex-row justify-center gap-10">
             <FeatureButton onClick={shuffleParts}>
               <i
                 className="fa-solid fa-shuffle"
@@ -131,7 +131,7 @@ export default function Alpaca() {
             </FeatureButton>
           </div>
         </div>
-        <div className="basis-3/5">
+        <div className="basis-1/2">
           <Settings />
         </div>
       </div>

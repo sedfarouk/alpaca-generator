@@ -10,7 +10,7 @@ export default function Part({ partItem, partImagesMap, ...props }) {
       <img
         src={partImagesMap[selectPartStyle]}
         alt={partItem}
-        className="alpaca-part h-full w-full object-contain"
+        className="alpaca-part h-auto w-full object-contain"
       />
       {props.children}
     </>
