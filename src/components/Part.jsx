@@ -1,13 +1,18 @@
 import { useContext } from "react";
 import { alpacaContext } from "../store/alpaca-store";
 
-export default function Part({partItem, partImagesMap, ...props}) {
+export default function Part({ partItem, partImagesMap, ...props }) {
   const alpacaCtx = useContext(alpacaContext);
-  const selectPartStyle = alpacaCtx[partItem] + '.png';
-  console.log(partImagesMap[selectPartStyle]);
+  const selectPartStyle = alpacaCtx[partItem] + ".png";
+
   return (
-    <div style={{ backgroundImage: `url(${partImagesMap[selectPartStyle]})` }}>
+    <>
+      <img
+        src={partImagesMap[selectPartStyle]}
+        alt={partItem}
+        className="alpaca-part h-full w-full object-contain"
+      />
       {props.children}
-    </div>
+    </>
   );
 }

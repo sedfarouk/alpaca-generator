@@ -29,7 +29,7 @@ export default function AlpacaContextProvider(props) {
   const [eyes, setEyes] = useState("default");
   const [neck, setNeck] = useState("default");
   const [leg, setLeg] = useState("default");
-  const [accessories, setAccessories] = useState("default");
+  const [accessories, setAccessories] = useState("headphone");
   const [background, setBackground] = useState("blue50");
   const [currentPart, setCurrentPart] = useState("Hair");
 

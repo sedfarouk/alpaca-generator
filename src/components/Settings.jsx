@@ -13,7 +13,7 @@ export default function Settings() {
   ).styles;
 
   return (
-    <div className="settings">
+    <div className="settings flex flex-col gap-10">
       <div className={classes.accessorize}>
         <h3>Accessorize the alpaca's</h3>
         {AVAILABLE_PARTS.map((partItem) => (
