@@ -15,7 +15,6 @@ import Part from "./Part";
 import Settings from "./Settings";
 import { alpacaContext } from "../store/alpaca-store";
 import AVAILABLE_PARTS from "../utils/preconfigurations";
-import { alpacaDivRef } from "react";
 import html2canvas from "html2canvas";
 
 const allAvailableParts = AVAILABLE_PARTS;
