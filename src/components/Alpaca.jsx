@@ -84,12 +84,21 @@ export default function Alpaca() {
 
   return (
     <div className="mx-auto w-3/5">
-      <h1 className="text-[30px] md:text-[40px] text-center m-[50px]">
-        Alpaca Generator
-      </h1>
+      <div className="text-center m-[50px]">
+        <h1 className="text-[30px] md:text-[40px]">
+          Alpaca Generator
+        </h1>
+        <p className="">
+          Show some ❤️{" "}
+          <a href="https://github.com/sedfarouk/alpaca-generator" className="text-blue-600 underline">here</a>
+        </p>
+      </div>
       <div className="main mt-[80px] flex flex-col md:flex-row gap-20">
         <div className="alpaca basis-1/2">
-          <div className="relative h-[400px] md:h-[600px] w-auto" ref={alpacaDivRef}>
+          <div
+            className="relative h-[400px] md:h-[600px] w-auto"
+            ref={alpacaDivRef}
+          >
             <Part partItem="background" partImagesMap={backgroundImagesMap}>
               <Part partItem="leg" partImagesMap={legImagesMap}>
                 <Part partItem="ears" partImagesMap={earsImagesMap}>
