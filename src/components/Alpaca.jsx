@@ -123,7 +123,7 @@ export default function Alpaca() {
               </Part>
             </Part>
           </div>
-          <div className="flex flex-row justify-center gap-10">
+          <div className="flex flex-row justify-center gap-10 mt-10">
             <FeatureButton onClick={shuffleParts}>
               <i
                 className="fa-solid fa-shuffle"
