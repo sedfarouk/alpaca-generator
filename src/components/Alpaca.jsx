@@ -96,10 +96,10 @@ export default function Alpaca() {
                   <Part partItem="neck" partImagesMap={neckImagesMap}>
                     <Part partItem="nose" partImagesMap={noseImagesMap}>
                       <Part partItem="mouth" partImagesMap={mouthImagesMap}>
-                        <Part partItem="hair" partImagesMap={hairImagesMap}>
+                        <Part partItem="accessories" partImagesMap={accessoriesImagesMap}>
                           <Part
-                            partItem="accessories"
-                            partImagesMap={accessoriesImagesMap}
+                            partItem="hair"
+                            partImagesMap={hairImagesMap}
                           >
                             <Part
                               partItem="eyes"
