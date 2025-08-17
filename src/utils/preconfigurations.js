@@ -14,7 +14,7 @@ const AVAILABLE_PARTS = [
       "tilt-forward",
     ],
   },
-  { part: "Accessories", styles: ["default", "earings", "flower", "glasses", "headphone"] },
+  { part: "Accessories", styles: ["earings", "flower", "glasses", "headphone"] },
   {
     part: "Background", styles: [
       "blue50",
